@@ -6,10 +6,5 @@ module.exports = {
   'ping': {
     description: 'Checks connectivity with discord\'s servers.',
     format: 'ping'
-  },
-  'say': {
-    aliases: ['repeat'],
-    description: 'Repeats whatever is said.',
-    format: 'say <message>'
   }
 }

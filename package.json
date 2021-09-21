@@ -1,16 +1,32 @@
 {
-  "name": "Discordjs-starter",
+  "name": "discordjs-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "First of all, click on the \"Lock\" icon in the tab on the left. It will show you your repl's secrets. On this tab, add a new secret, set its name to `TOKEN` and its value to your discord bot token from the [discord developer dashboard](https://discord.com/developers/applications). Optionally, move to `index.js` and edit lines 6-12 (client configuration) as it suits you. Your bot is ready to launch!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.2.0",
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.2.0-dev.1631664285.88e2622",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoFernandesUA/EduBot21.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EduardoFernandesUA/EduBot21/issues"
+  },
+  "homepage": "https://github.com/EduardoFernandesUA/EduBot21#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0"
   }
 }
