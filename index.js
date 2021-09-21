@@ -11,8 +11,10 @@ const client = new Client({
 			type: 'LISTENING',
 		},
 	},
-	intents: [Intents.FLAGS.GUILDS],
+	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES],
 });
+
+client.tempChannels = new Collection();
 
 /* store all commands on client.commands */
 client.commands = new Collection();
