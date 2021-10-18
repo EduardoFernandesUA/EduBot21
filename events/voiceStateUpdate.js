@@ -11,6 +11,5 @@ module.exports = {
 					ch.delete();
 				}
 			});
-		// console.log(oldVoiceState.channel ? oldVoiceState.channel.members.count : 0);
 	},
 };

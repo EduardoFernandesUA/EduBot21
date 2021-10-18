@@ -12,7 +12,7 @@ module.exports = {
 	async execute(interaction) {
 
 		// get all channels and the temp channels category
-		let channels = await interaction.member.guild.channels.fetch();
+		const channels = await interaction.member.guild.channels.fetch();
 		let category = channels.find(channel => channel.type == 'GUILD_CATEGORY' && channel.name == 'Temp Channels');
 
 		// if temp channels does not exist
@@ -25,7 +25,7 @@ module.exports = {
 		const channelName = interaction.options.getString('name');
 
 		// create the channel
-		let createdChannel = await interaction.member.guild.channels.create(channelName, {
+		await interaction.member.guild.channels.create(channelName, {
 			type: 'GUILD_VOICE',
 			parent: category,
 			permissionOverwrites: [
