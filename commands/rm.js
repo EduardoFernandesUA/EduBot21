@@ -9,7 +9,11 @@ module.exports = {
 				.setDescription('max range is 99')
 				.setRequired(true)),
 	async execute(interaction) {
-		interaction.channel.bulkDelete(1);
-		await interaction.reply('Vai po caralho obla');
+        let n = interaction.options.getNumber('number');
+        interaction.channel.bulkDelete(n,true)
+        .then(messages=>{
+            interaction.reply('Deleted '+messages.size+' messages...');
+        })
+        .catch(console.error);
 	},
 };
